@@ -9,6 +9,8 @@ body {
 	font-weight: 400;
 	font-family: 'Open Sans', sans-serif;
 	color: $default;
+	overflow-x: hidden;
+	min-width: 320px;
 }
 .wrapper {
 	display: flex;
