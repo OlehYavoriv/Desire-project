@@ -6,3 +6,10 @@ $initial-color:rgba(54, 56, 56, 0.9033);
 $black: #363838;
 $default:#5a5a5a;
 $footer-color:#DFDFDF;
+
+@function max($numbers...){
+    @return m#{a}x(#{$numbers});
+}
+@function min($numbers...){
+    @return m#{i}n(#{$numbers});
+}
