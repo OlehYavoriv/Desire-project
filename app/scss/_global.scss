@@ -12,6 +12,7 @@ body {
 	overflow-x: hidden;
 	min-width: 320px;
 }
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -21,28 +22,33 @@ body {
 .main {
 	flex: 1 0 auto;
 }
+
 .footer {
 	flex: 0 0 auto;
 }
-.container-fluid{
+
+.container-fluid {
 	max-width: 1920px;
 	margin: 0 auto;
 	padding: 0 10px;
 }
 
-.container{
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px;
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
-.slick-dots{
+
+.slick-dots {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	li{
+
+	li {
 		padding: 0 15px;
 	}
-	button{
+
+	button {
 		background-color: $black;
 		border: none;
 		width: 8px;
@@ -51,14 +57,30 @@ body {
 		padding: 0;
 		font-size: 0;
 	}
-	li.slick-active{
-		button{
+
+	li.slick-active {
+		button {
 			background-color: #ffef35;
 		}
 	}
 }
 
+.info-email {
+	font-weight: 600;
+	color: $black;
+	font-size: 14px;
+	margin-bottom: 22px;
+	padding-left: 30px;
+	display: inline-block;
+	position: relative;
 
-
-
-
+	&::before {
+		content: '';
+		background-image: url(../images/mail.svg);
+		left: 0;
+		top: 8px;
+		width: 16px;
+		height: 12px;
+		position: absolute;
+	}
+}
