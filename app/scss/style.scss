@@ -18,6 +18,9 @@
     padding: 0;
     cursor: pointer;
   }
+  &__btn-menu{
+    display: none;
+  }
 }
 
 .logo {
@@ -268,8 +271,8 @@
 
   &__item::after {
     content: "/";
-    margin-left: -4px;
-    margin-right: 4px;
+
+    position: absolute;
   }
 
   &__item:last-child::after {
@@ -278,6 +281,11 @@
 
   &__list {
     display: flex;
+    overflow-x: auto; 
+  }
+  &__item{
+    position: relative;
+    padding-right: 8px;
   }
 
   &__link {
@@ -819,6 +827,9 @@
 .map {
   margin-top: -53px;
   margin-bottom: 50px;
+  iframe{
+    height: 578px;
+  }
 }
 
 .contact {
@@ -950,7 +961,7 @@
     top: 0;
     right: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: rgba(#ffffff, 0.6);
     color: $black;
@@ -1352,3 +1363,6 @@
     cursor: pointer;
   }
 }
+
+
+@import 'media';
